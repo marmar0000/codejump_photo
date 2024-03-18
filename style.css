@@ -88,10 +88,13 @@ Detail
   margin-top: 60px;
 }
 
+.detail > div {
+  margin-top: 10px;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .detail_desc {
@@ -101,6 +104,10 @@ Detail
 .detail_desc .flex {
   justify-content: start;
   gap: 26px;
+}
+
+.detail .flex + .flex {
+  margin-top: 10px;
 }
 
 .detail dl {
