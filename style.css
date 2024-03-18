@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+
+/*-------------------------------------------
+Common
+-------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #F4F9FF;
+  font-family: Arial, "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.wrapper-large {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper-small {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+dt {
+  font-weight: normal;
+}
+
+
+
+/*-------------------------------------------
+Header
+-------------------------------------------*/
+
+h1 {
+  padding: 60px 0 15px;
+}
+
+
+
+/*-------------------------------------------
+Index
+-------------------------------------------*/
+
+.index {
+  background: #fff;
+  margin-top: 60px;
+  padding: 30px 0;
+}
+
+
+.index_list {
+  margin-top: 10px;
+}
+
+.index_item {
+  list-style-type: decimal;
+  list-style-position: inside;
+  line-height: 1.4;
+}
+
+.index_item + .index_item {
+  margin-top: 20px;
+}
+
+
+
+/*-------------------------------------------
+Detail
+-------------------------------------------*/
+
+.detail {
+  margin-top: 60px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.detail_desc {
+  width: 275px;
+}
+
+.detail_desc .flex {
+  justify-content: start;
+  gap: 26px;
+}
+
+.detail dl {
+  margin-top: 20px;
+  padding: 16px 0;
+  border-top: 1px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.detail dt {
+  min-width: 42px;
+}
+
+.detail_text {
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.detail_link {
+  display: inline-block;
+  margin-top: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.detail_link:hover {
+  opacity: 0.7;
+}
+
+
+
+/*-------------------------------------------
+Footer
+-------------------------------------------*/
+
+footer.wrapper-small {
+  margin-top: 60px;
+}
+
+small {
+  display: block;
+  padding: 55px 0 15px;
+  font-size: 10px;
+}
+
+
+
+/*-------------------------------------------
+スマホ
+-------------------------------------------*/
+
+@media (max-width: 1024px) {
+
+  /* Common */
+  .wrapper-small {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+  /* Header */
+  header {
+    padding-left: 10px;
+  }
+
+
+  /* Hero */
+  .hero {
+    padding: 0 10px;
+  }
+
+
+  /* Index */
+  .index_item {
+    text-indent: -1.1em;
+    padding-left: 1em;
+  }
+
+
+  /* Detail */
+  .detail > .flex {
+    flex-direction: column;
+  }
+
+  .detail_img {
+    width: 100%;
+  }
+
+  .detail_desc {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .detail dt {
+    width: 14%;
+  }
+}
+
+
+@media (max-width: 374px) {
+  .wrapper-small {
+    padding: 0 20px;
+  }
+}
